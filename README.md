@@ -1,1 +1,1 @@
-# CS50-Series-Project-Collection
+# Coding-Project-Collection
