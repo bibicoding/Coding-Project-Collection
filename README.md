@@ -10,7 +10,7 @@ I will continue updating this repository throughout my coding journey, so stay t
 This is CS50P, an online course established by the CS50 team at Harvard that provides an introduction to Python.
 CS50P introduces **Syntaxes and Datatypes**, then moves to **Variables and Loops**.
 Then, it briefly explains **testing, I/O, Regex, and OOP**.
-The course culminates when Professor Maylan (The director and lecturer of CS50) introduces further applications of Python.
+The course culminates when Professor Malan (The director and lecturer of CS50) introduces further applications of Python.
 
 In the CS50P Project Folder are the weekly projects I've done while learning
 ...
