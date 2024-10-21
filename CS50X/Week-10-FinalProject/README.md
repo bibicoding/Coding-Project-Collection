@@ -8,13 +8,13 @@ The platform partners with various hospitals to provide real-time availability o
 
 It also ensures a secure environment for account management. Users can book appointments, change their passwords, and view their appointment history, making it easy to keep track of past visits.
 
-Alpha Health streamlines how patients connect with healthcare services, making it easier and faster to reach hospitals and doctors from anywhere. It’s a user-friendly platform that benefits those who need care most.
+Alpha Health streamlines how patients connect with healthcare services, making reaching hospitals and doctors from anywhere easier and faster. It’s a user-friendly platform that benefits those who need care most.
 
 #### Video Demo: https://youtu.be/JQiLeMRPwYA
 
 ## Features
 
-- **User Registration & Login:** Allows users to create an account and log in securely.
+- **User Registration & Login:** Allows users to create accounts and log in securely.
 - **Hospital Registration & Teleconsult Reservations:** Users can easily book hospital appointments and teleconsultations after logging in.
 - **Real-Time Availability:** Check the availability of hospital slots in collaboration with Alpha Health.
 - **Manage Account:** Users can change their password and view previous bookings through their account.
@@ -36,5 +36,5 @@ Before running this project, ensure you have the following installed:
 ### How to run the website
 
 #### Run the below command in the terminal
-pip install -r requirements.txt
-flask run
+- pip install -r requirements.txt
+- flask run
