@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="sbstyle.css">
+    </head>
+    <body>
+
+        <header>
+            <h1> Left Team VS Right Team </h1>
+            <p> Hey There! Click the button to change the score! </p>
+            <p id="result"></p>
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td class="team">Team 1</td>
+                    <td class="team">Team 2</td>
+                </tr>
+                <tr>
+                    <td id="score1">0</td>
+                    <td id="score2">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="add1">+1</button>
+                    </td>
+                    <td>
+                        <button id="add2">+1</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            <p> Made by CS50 </p>
+        </footer>
+
+        <script src="sbscript.js"></script>
+
+    </body>
+</html>
