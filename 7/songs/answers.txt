@@ -1,0 +1,22 @@
+1.
+
+I would use:
+
+SELECT AVG(energy), AVG(danceability), AVG(valence) FROM songs;
+
+to output the averge number of each feature.
+
+If the three numbers are higher than 0.5 (or maybe a higher number),
+I would determine that the user's mood is positive, and vice versa.
+
+
+2.
+
+Such calculation may be misleading when only a minority of songs have lower indexes but really low numbers (eg. 0.2),
+while the majority of songs listened by the user are considered positive but not high numbers (eg. 0.52).
+That would cause the overall average of indexes to be lower and assume that the user's mood is negative, but in fact
+the user was just trying new style of music occasionally (perhaps).
+
+I think a better way to calculate this is to find the number of songs those energy, danceability, or valence are
+higher than a certain standard. Then find the proportion of those "happier" songs to the total songs listened by
+the user this year.
