@@ -2,20 +2,20 @@
 
 ## Description:
 
-Alpha Health is a cutting-edge web application designed to simplify the process of hospital registration and teleconsultation scheduling for users. By providing an easy-to-use platform, Alpha Health enables users to quickly register and log into their accounts, where they can seamlessly make reservations for hospital visits or schedule remote consultations with healthcare professionals. The platform is built with the goal of offering a more convenient and hassle-free experience for users, eliminating the need for physical visits to hospitals just to secure an appointment.
+Alpha Health is a web application that simplifies hospital registration and teleconsultation scheduling. Users can quickly sign up and log in to book hospital visits or remote consultations with doctors, making the process fast and easy. 
 
-Through its partnerships with various hospitals, Alpha Health ensures that users can easily access real-time availability of healthcare providers, allowing them to book appointments remotely. This feature is particularly beneficial for individuals in need of immediate care or those who live far from healthcare facilities, helping them secure timely medical attention without unnecessary delays.
+The platform partners with various hospitals to provide real-time availability of healthcare providers. This is especially useful for those needing immediate care or living far from medical facilities.
 
-The application is designed with user convenience in mind, providing a secure environment for account management. In addition to booking appointments, users can change their passwords at any time and access their appointment history, offering a comprehensive record of past consultations and hospital visits. By streamlining the entire process of booking and tracking appointments, Alpha Health saves users significant time and effort, enabling them to focus on their health and well-being without the administrative burden that often comes with healthcare management.
+It also ensures a secure environment for account management. Users can book appointments, change their passwords, and view their appointment history, making it easy to keep track of past visits.
 
-In summary, Alpha Health revolutionizes how patients interact with healthcare services, making it easier, faster, and more efficient to connect with hospitals and doctors from anywhere, at any time. It’s a user-friendly platform that brings healthcare services closer to the people who need them most.
+Alpha Health streamlines how patients connect with healthcare services, making it easier and faster to reach hospitals and doctors from anywhere. It’s a user-friendly platform that benefits those who need care most.
 
 #### Video Demo: https://youtu.be/JQiLeMRPwYA
 
 ## Features
 
-- **User Registration & Login:** Allows users to create an account and login securely.
-- **Hospital Registration & Teleconsult Reservations:** Users can book hospital appointments and teleconsultations easily after logging in.
+- **User Registration & Login:** Allows users to create an account and log in securely.
+- **Hospital Registration & Teleconsult Reservations:** Users can easily book hospital appointments and teleconsultations after logging in.
 - **Real-Time Availability:** Check the availability of hospital slots in collaboration with Alpha Health.
 - **Manage Account:** Users can change their password and view previous bookings through their account.
 
@@ -32,3 +32,9 @@ Before running this project, ensure you have the following installed:
 - Python 3.x
 - Flask (installed via `requirements.txt`)
 - Any other dependencies listed in `requirements.txt`
+
+### How to run the website
+
+#### Run the below command in the terminal
+pip install -r requirements.txt
+flask run
