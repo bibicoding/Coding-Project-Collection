@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Appointments
+{% endblock %}
+
+{% block main %}
+    <h1 class="title">Make Appointments</h1>
+    <form action="/mkapmt" method="post">
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="institute">
+                <option value="" disabled selected>Select an institute</option>
+                <option value="Cathay General Hospital">Cathay General Hospital</option>
+                <option value="Taipei Veterans General Hospital">Taipei Veterans General Hospital</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="type">
+                <option value="" disabled selected>Select an action</option>
+                <option value="Hospital Appointment">Hospital Appointment</option>
+                <option value="Teleconsult Reservation">Teleconsult Reservation</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input type="date" id="date" name="date" class="form-control mx-auto w-auto" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </div>
+
+    </form>
+{% endblock %}

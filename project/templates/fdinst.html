@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Find Institutions
+{% endblock %}
+
+{% block content %}
+    <div class="homepage">
+        <div class="about-us">
+            <h3>We collaborate with...</h3>
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/static/images/cathay.webp" class="card-img-bottom" id="cathay">
+                        <a href="https://www.cgh.org.tw/" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Proceed">
+                            <h5 class="card-title">Cathay General Hospital</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/static/images/tvgh.png" class="card-img-bottom" id="tvgh">
+                        <a href="https://www.vghtpe.gov.tw/Index.action" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Proceed">
+                            <h5 class="card-title">Taipei Veterans General Hospital</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

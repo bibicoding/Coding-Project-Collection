@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recent Activities
+{% endblock %}
+
+{% block main %}
+    <h1 class="title">Recent Activities</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Institute</th>
+                <th class="text-end">Type</th>
+                <th class="text-end">Appointment Date</th>
+                <th class="text-end">Action Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in appointments %}
+                <tr>
+                    <td class="text-start">{{ row["institute"]}}</td>
+                    <td class="text-end">{{ row["type"] }}</td>
+                    <td class="text-end">{{ row["apmt_date"] }}</td>
+                    <td class="text-end">{{ row["register_time"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

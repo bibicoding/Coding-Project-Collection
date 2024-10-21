@@ -1,0 +1,237 @@
+/* Size for brand */
+
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+
+nav .navbar-brand
+{
+    font-family: Geogia;
+    font-size: xx-large;
+}
+
+.nav-item
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+body {
+    visibility: hidden;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.homepage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/images/hospital.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title
+{
+    text-align: center;
+    margin: 40px;
+    color: #333;
+    font-family: "Trirong", serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(130, 200, 190, 0.9), 0 0 20px rgba(230, 100, 120, 0.7);
+}
+
+
+.intro-block
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.intro-block h1
+{
+    font-size:5vw;
+	color: #000;
+	font-family: "Trirong", serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.about-us
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Trirong", serif;
+    text-align: center;
+}
+
+.about-us h2
+{
+    font-size: 4vw;
+    color: #000;
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+.about-us h3
+{
+    font-size: 3vw;
+    color: #000;
+    font-weight: 300;
+}
+
+.about-us p
+{
+    margin-top: 30px;
+    line-height: 150%;
+}
+
+
+h2
+{
+    margin-bottom: 30px;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.card {
+    width: 30rem;
+    height: 15rem;
+    text-align: center;
+    font-family: "Arial";
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Calibri;
+    letter-spacing: 1.25px;
+}
+
+.card-title:hover
+{
+    color: blue;
+}
+
+.tooltip-inner {
+    white-space: nowrap;
+    max-width: none;
+    padding: 0.5rem;
+}
+
+img {
+    display: block;
+    border: 1px solid white;
+    border-radius: 25%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#cathay
+{
+    width: 250px;
+    height: 150px;
+}
+
+#tvgh
+{
+    width: 270px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    width: 800px;
+    height: 300px;
+    opacity: 70%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .bi {
+    font-size: 2rem;
+    line-height: 30px;
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 300%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container li:last-child {
+    margin-bottom: 0;
+}
+
+
+.container ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+table
+{
+    margin: 3rem auto 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
