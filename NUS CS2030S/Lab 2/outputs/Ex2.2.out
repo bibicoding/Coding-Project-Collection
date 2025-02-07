@@ -1,0 +1,14 @@
+1.100: C0 arrives [ ]
+1.100: C0 withdrawal (at S0) begins
+2.200: C1 arrives [ ]
+2.200: C1 joins queue [ ]
+3.100: C0 withdrawal (at S0) ends
+3.100: C0 departs
+3.100: C1 withdrawal (at S0) begins
+3.300: C2 arrives [ ]
+3.300: C2 joins queue [ ]
+5.100: C1 withdrawal (at S0) ends
+5.100: C1 departs
+5.100: C2 withdrawal (at S0) begins
+7.100: C2 withdrawal (at S0) ends
+7.100: C2 departs

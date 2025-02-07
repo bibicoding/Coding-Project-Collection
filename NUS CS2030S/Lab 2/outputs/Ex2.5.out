@@ -1,0 +1,16 @@
+1.000: C0 arrives [ ]
+1.000: C0 deposit (at S0) begins
+1.100: C1 arrives [ ]
+1.100: C1 withdrawal (at S1) begins
+2.000: C0 deposit (at S0) ends
+2.000: C0 departs
+2.100: C1 withdrawal (at S1) ends
+2.100: C1 departs
+2.200: C2 arrives [ ]
+2.200: C2 deposit (at S0) begins
+2.300: C3 arrives [ ]
+2.300: C3 withdrawal (at S1) begins
+3.200: C2 deposit (at S0) ends
+3.200: C2 departs
+3.300: C3 withdrawal (at S1) ends
+3.300: C3 departs
