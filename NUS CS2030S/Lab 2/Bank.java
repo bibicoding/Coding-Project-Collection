@@ -23,7 +23,7 @@ public class Bank {
 
   public Counter getAvailableCounter() {
     for (Counter c : this.counters) {
-      if (c.getAvail()) {
+      if (c.isAvail()) {
         return c;
       }
     }

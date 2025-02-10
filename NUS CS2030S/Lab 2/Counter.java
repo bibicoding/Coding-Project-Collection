@@ -7,7 +7,6 @@
 public class Counter {
   private int id;
   private boolean isAvailable;
-  private Queue queue;
 
   /**
    * Constructor of Counter
@@ -22,7 +21,7 @@ public class Counter {
     return this.id;
   }
 
-  public boolean getAvail() {
+  public boolean isAvail() {
     return this.isAvailable;
   }
 

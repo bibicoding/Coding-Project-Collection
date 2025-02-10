@@ -7,20 +7,26 @@
 public class Customer {
   private int id;
   private double arvtime;
-  private double svtime;
+  private double svDuration;
   private double svBeginTime;
   private double svEndTime;
   private Task task;
 
-  /**
+   /**
    * Constructor of Customer
-   * tagged with id, service time, and arrival time
+   * @param id The Customer ID
+   * @param arvtime The Arrival Time of the customer
+   * @param svDuration The Service Duation of the customer
+   * @param svBeginTime The Service Begin Time of the customer
+   * @param svEndTime The Service End Time of the customer
+   * @param taskType Type of task (either deposit or withdrawal)
    */
+
   public Customer(
-      int id, double arvtime, double svtime, double svBeginTime, double svEndTime, int taskType) {
+      int id, double arvtime, double svDuration, double svBeginTime, double svEndTime, int taskType) {
     this.id = id;
     this.arvtime = arvtime;
-    this.svtime = svtime;
+    this.svDuration = svDuration;
     this.svBeginTime = svBeginTime;
     this.svEndTime = svEndTime;
 
@@ -39,8 +45,8 @@ public class Customer {
     return this.arvtime;
   }
 
-  public double getServeTime() {
-    return this.svtime;
+  public double getServiceDuration() {
+    return this.svDuration;
   }
 
   public double getServiceBegin() {

@@ -8,11 +8,6 @@ import java.util.Scanner;
  */
 class BankSimulation extends Simulation {
   /**
-   * The availability of counters in the bank.
-   */
-  private boolean[] available;
-
-  /**
    * The list of customer arrival events to populate
    * the simulation with.
    */

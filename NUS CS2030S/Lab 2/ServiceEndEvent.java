@@ -12,7 +12,7 @@ public class ServiceEndEvent extends Event {
   private Bank bank;
 
   public ServiceEndEvent(Customer customer, Counter counter, Bank bank) {
-    super(customer.getServiceBegin() + customer.getServeTime());
+    super(customer.getServiceBegin() + customer.getServiceDuration());
     this.customer = customer;
     this.counter = counter;
     this.bank = bank;
@@ -28,7 +28,7 @@ public class ServiceEndEvent extends Event {
   @Override
   public Event[] simulate() {
 
-    double time = this.customer.getServiceBegin() + this.customer.getServeTime();
+    double time = this.customer.getServiceBegin() + this.customer.getServiceDuration();
     this.customer.updateServiceEndTime(time);
 
     this.counter.setAvail(true);
