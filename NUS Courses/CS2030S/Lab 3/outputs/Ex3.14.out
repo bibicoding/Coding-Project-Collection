@@ -1,0 +1,60 @@
+1.000: C0 arrives [ ]
+1.000: C0 withdrawal $1 (at S0 $100 [ ]) begins
+1.100: C1 arrives [ ]
+1.100: C1 withdrawal $1 (at S1 $100 [ ]) begins
+1.200: C2 arrives [ ]
+1.200: C2 withdrawal $1 (at S2 $100 [ ]) begins
+1.300: C3 arrives [ ]
+1.300: C3 joins counter queue (at S0 $99 [ ])
+1.400: C4 arrives [ ]
+1.400: C4 joins counter queue (at S1 $99 [ ])
+1.500: C5 arrives [ ]
+1.500: C5 joins counter queue (at S2 $99 [ ])
+1.600: C6 arrives [ ]
+1.600: C6 joins counter queue (at S0 $99 [ C3 ])
+1.700: C7 arrives [ ]
+1.700: C7 joins counter queue (at S1 $99 [ C4 ])
+1.800: C8 arrives [ ]
+1.800: C8 joins counter queue (at S2 $99 [ C5 ])
+1.900: C9 arrives [ ]
+1.900: C9 joins bank queue [ ]
+2.000: C10 arrives [ C9 ]
+2.000: C10 joins bank queue [ C9 ]
+2.100: C11 arrives [ C9 C10 ]
+2.100: C11 joins bank queue [ C9 C10 ]
+3.000: C0 withdrawal $1 (at S0 $99 [ C3 C6 ]) ends: success
+3.000: C0 departs
+3.000: C3 deposit $1 (at S0 $99 [ C6 ]) begins
+3.010: C9 joins counter queue (at S0 $100 [ C6 ])
+3.200: C2 withdrawal $1 (at S2 $99 [ C5 C8 ]) ends: success
+3.200: C2 departs
+3.200: C5 deposit $1 (at S2 $99 [ C8 ]) begins
+3.210: C10 joins counter queue (at S2 $100 [ C8 ])
+4.100: C1 withdrawal $1 (at S1 $99 [ C4 C7 ]) ends: success
+4.100: C1 departs
+4.100: C4 withdrawal $1 (at S1 $99 [ C7 ]) begins
+4.110: C11 joins counter queue (at S1 $98 [ C7 ])
+6.000: C3 deposit $1 (at S0 $100 [ C6 C9 ]) ends: success
+6.000: C3 departs
+6.000: C6 withdrawal $1 (at S0 $100 [ C9 ]) begins
+6.100: C4 withdrawal $1 (at S1 $98 [ C7 C11 ]) ends: success
+6.100: C4 departs
+6.100: C7 deposit $1 (at S1 $98 [ C11 ]) begins
+6.200: C5 deposit $1 (at S2 $100 [ C8 C10 ]) ends: success
+6.200: C5 departs
+6.200: C8 withdrawal $1 (at S2 $100 [ C10 ]) begins
+8.000: C6 withdrawal $1 (at S0 $99 [ C9 ]) ends: success
+8.000: C6 departs
+8.000: C9 deposit $1 (at S0 $99 [ ]) begins
+8.200: C8 withdrawal $1 (at S2 $99 [ C10 ]) ends: success
+8.200: C8 departs
+8.200: C10 withdrawal $1 (at S2 $99 [ ]) begins
+9.100: C7 deposit $1 (at S1 $99 [ C11 ]) ends: success
+9.100: C7 departs
+9.100: C11 deposit $1 (at S1 $99 [ ]) begins
+10.200: C10 withdrawal $1 (at S2 $98 [ ]) ends: success
+10.200: C10 departs
+11.000: C9 deposit $1 (at S0 $100 [ ]) ends: success
+11.000: C9 departs
+12.100: C11 deposit $1 (at S1 $100 [ ]) ends: success
+12.100: C11 departs

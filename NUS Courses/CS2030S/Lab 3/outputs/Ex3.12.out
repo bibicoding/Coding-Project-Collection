@@ -1,0 +1,52 @@
+1.000: C0 arrives [ ]
+1.000: C0 deposit $10 (at S0 $100 [ ]) begins
+1.100: C1 arrives [ ]
+1.100: C1 deposit $20 (at S1 $100 [ ]) begins
+1.200: C2 arrives [ ]
+1.200: C2 deposit $25 (at S2 $100 [ ]) begins
+1.300: C3 arrives [ ]
+1.300: C3 joins counter queue (at S0 $110 [ ])
+1.400: C4 arrives [ ]
+1.400: C4 joins counter queue (at S1 $120 [ ])
+1.500: C5 arrives [ ]
+1.500: C5 joins counter queue (at S2 $125 [ ])
+1.600: C6 arrives [ ]
+1.600: C6 joins counter queue (at S0 $110 [ C3 ])
+1.700: C7 arrives [ ]
+1.700: C7 joins counter queue (at S1 $120 [ C4 ])
+1.800: C8 arrives [ ]
+1.800: C8 joins counter queue (at S2 $125 [ C5 ])
+1.900: C9 arrives [ ]
+1.900: C9 joins counter queue (at S0 $110 [ C3 C6 ])
+2.100: C1 deposit $20 (at S1 $120 [ C4 C7 ]) ends: success
+2.100: C1 departs
+2.100: C4 withdrawal $15 (at S1 $120 [ C7 ]) begins
+2.200: C2 deposit $25 (at S2 $125 [ C5 C8 ]) ends: success
+2.200: C2 departs
+2.200: C5 withdrawal $20 (at S2 $125 [ C8 ]) begins
+3.000: C0 deposit $10 (at S0 $110 [ C3 C6 C9 ]) ends: success
+3.000: C0 departs
+3.000: C3 withdrawal $30 (at S0 $110 [ C6 C9 ]) begins
+3.100: C4 withdrawal $15 (at S1 $105 [ C7 ]) ends: success
+3.100: C4 departs
+3.100: C7 deposit $30 (at S1 $105 [ ]) begins
+4.000: C3 withdrawal $30 (at S0 $80 [ C6 C9 ]) ends: success
+4.000: C3 departs
+4.000: C6 withdrawal $15 (at S0 $80 [ C9 ]) begins
+4.200: C5 withdrawal $20 (at S2 $105 [ C8 ]) ends: success
+4.200: C5 departs
+4.200: C8 deposit $30 (at S2 $105 [ ]) begins
+5.000: C10 arrives [ ]
+5.000: C10 joins counter queue (at S1 $135 [ ])
+5.100: C7 deposit $30 (at S1 $135 [ C10 ]) ends: success
+5.100: C7 departs
+5.100: C10 withdrawal $40 (at S1 $135 [ ]) begins
+6.000: C6 withdrawal $15 (at S0 $65 [ C9 ]) ends: success
+6.000: C6 departs
+6.000: C9 withdrawal $50 (at S0 $65 [ ]) begins
+6.100: C10 withdrawal $40 (at S1 $95 [ ]) ends: success
+6.100: C10 departs
+6.200: C8 deposit $30 (at S2 $135 [ ]) ends: success
+6.200: C8 departs
+8.000: C9 withdrawal $50 (at S0 $15 [ ]) ends: success
+8.000: C9 departs

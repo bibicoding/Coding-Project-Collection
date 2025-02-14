@@ -1,0 +1,16 @@
+1.000: C0 arrives [ ]
+1.000: C0 deposit $100 (at S0 $100 [ ]) begins
+1.100: C1 arrives [ ]
+1.100: C1 withdrawal $80 (at S1 $100 [ ]) begins
+2.000: C0 deposit $100 (at S0 $200 [ ]) ends: success
+2.000: C0 departs
+2.100: C1 withdrawal $80 (at S1 $20 [ ]) ends: success
+2.100: C1 departs
+2.200: C2 arrives [ ]
+2.200: C2 deposit $45 (at S0 $200 [ ]) begins
+2.300: C3 arrives [ ]
+2.300: C3 withdrawal $32 (at S1 $20 [ ]) begins
+3.200: C2 deposit $45 (at S0 $245 [ ]) ends: success
+3.200: C2 departs
+3.300: C3 withdrawal $32 (at S1 $20 [ ]) ends: fail
+3.300: C3 departs
