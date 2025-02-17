@@ -12,17 +12,12 @@ public class ServiceEndEvent extends Event {
   private Bank bank;
   private String result;
 
-  public ServiceEndEvent(Customer customer, Counter counter, Bank bank, int result) {
+  public ServiceEndEvent(Customer customer, Counter counter, Bank bank) {
     super(customer.getServiceBegin() + customer.getServiceDuration());
     this.customer = customer;
     this.counter = counter;
     this.bank = bank;
-
-    if (result == 1) {
-      this.result = "success";
-    } else {
-      this.result = "fail";
-    }
+    this.result = this.counter.getTaskStatus();
   }
 
   @Override

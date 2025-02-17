@@ -28,25 +28,7 @@ public class ServiceBeginEvent extends Event {
   @Override
   public Event[] simulate() {
     this.counter.setAvail(false);
-
-    int counterMoney = this.counter.getMoney();
-    int cash = this.customer.getAmount();
-    int tasktype = this.customer.getTaskType();
-    int result;
-
-    if (tasktype == 0) {
-      this.counter.updateMoney(counterMoney + cash);
-      result = 1;
-    } else if (tasktype == 1) {
-      if (cash > counterMoney) {
-        result = 0;
-      } else {
-        this.counter.updateMoney(counterMoney - cash);
-        result = 1;
-      }
-    } else {
-      result = 0;
-    }
-    return new Event[] {new ServiceEndEvent(this.customer, this.counter, this.bank, result)};
+    this.customer.performTask(this.counter);
+    return new Event[] {new ServiceEndEvent(this.customer, this.counter, this.bank)};
   }
 }

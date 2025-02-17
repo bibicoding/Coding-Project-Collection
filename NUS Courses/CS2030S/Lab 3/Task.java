@@ -1,6 +1,6 @@
 abstract class Task {
 
-  private int money;
+  protected final int money;
   private String type;
 
   public Task(int money, String type) {
@@ -8,9 +8,7 @@ abstract class Task {
     this.type = type;
   }
 
-  public int getMoney() {
-    return this.money;
-  }
+  public abstract void execute(Counter counter);
 
   @Override
   public String toString() {

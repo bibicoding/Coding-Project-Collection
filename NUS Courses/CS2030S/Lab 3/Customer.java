@@ -41,7 +41,6 @@ public class Customer {
     this.svBeginTime = svBeginTime;
     this.svEndTime = svEndTime;
     this.queueTime = qTime;
-    this.money = money;
     this.tasktype = tasktype;
 
     if (tasktype == 0) {
@@ -91,13 +90,10 @@ public class Customer {
     return this.task;
   }
 
-  public int getTaskType() {
-    return this.tasktype;
+  public void performTask(Counter counter) {
+    this.task.execute(counter);
   }
 
-  public int getAmount() {
-    return this.money;
-  }
 
   @Override
   public String toString() {
