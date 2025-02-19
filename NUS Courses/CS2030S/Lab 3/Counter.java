@@ -10,7 +10,7 @@ public class Counter implements Comparable<Counter> {
   private Queue<Customer> queue;
   private int money = 100;
   private String taskStatus = "success";
-  
+
   /**
    * Constructor of Counter
    * includes Counter ID and isAvailable
@@ -48,6 +48,7 @@ public class Counter implements Comparable<Counter> {
   public void deposit(int amount) {
     this.money += amount;
   }
+
   public void withdraw(int amount) {
     if (amount > this.money) {
       this.taskStatus = "fail";
@@ -59,7 +60,6 @@ public class Counter implements Comparable<Counter> {
   public String getTaskStatus() {
     return this.taskStatus;
   }
-
 
   @Override
   public int compareTo(Counter c) {

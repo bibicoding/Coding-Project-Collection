@@ -12,19 +12,18 @@ public class Customer {
   private double svEndTime;
   private double queueTime;
   private Task task;
-  private int tasktype;
-  private int money;
 
   /**
    * Constructor of Customer
-   * @param id The Customer ID
-   * @param arvtime The Arrival Time of the customer
-   * @param svDuration The Service Duation of the customer
+   * 
+   * @param id          The Customer ID
+   * @param arvtime     The Arrival Time of the customer
+   * @param svDuration  The Service Duation of the customer
    * @param svBeginTime The Service Begin Time of the customer
-   * @param svEndTime The Service End Time of the customer
-   * @param queueTime The time customer join a new queue
-   * @param tasktype Type of task (either deposit or withdrawal)
-   * @param money The amount of money concerned
+   * @param svEndTime   The Service End Time of the customer
+   * @param qTime       The time customer join a new queue
+   * @param tasktype    Type of task (either deposit or withdrawal)
+   * @param money       The amount of money concerned
    */
   public Customer(
       int id,
@@ -41,7 +40,6 @@ public class Customer {
     this.svBeginTime = svBeginTime;
     this.svEndTime = svEndTime;
     this.queueTime = qTime;
-    this.tasktype = tasktype;
 
     if (tasktype == 0) {
       this.task = new Deposit(money);
@@ -93,7 +91,6 @@ public class Customer {
   public void performTask(Counter counter) {
     this.task.execute(counter);
   }
-
 
   @Override
   public String toString() {
