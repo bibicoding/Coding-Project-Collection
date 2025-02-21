@@ -6,4 +6,4 @@ This course is a follow up to CS1010S. It explores two modern programming paradi
 
 ## About this folder
 
-This folder contains relevant code files and documents that the author worked on in CS2030S. Most code, if not all, is written in **Java. These documents include lab practices and practical examinations, which are hands-on implementation of object-oriented programming and functional programming in Java. 
+This folder contains relevant code files and documents that the author worked on in CS2030S. Most code, if not all, is written in Java. These documents include lab practices and practical examinations, which are hands-on implementation of object-oriented programming and functional programming in Java. 
