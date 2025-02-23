@@ -2,8 +2,8 @@
   .data 
 arrayA: .word 11, 0, 31, 22, 9, 17, 6, 9   # arrayA has 8 values
 count:  .word 999                      # dummy value
-
   .text
+
 main:
     la   $t0, arrayA  # map base address of arrayA to $t0
     lw   $t8, count   # map value of count to $t8
