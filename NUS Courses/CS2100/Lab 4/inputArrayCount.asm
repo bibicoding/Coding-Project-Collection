@@ -1,4 +1,4 @@
-# arrayCount.asm
+# inputArrayCount.asm
   .data 
 arrayA: .word 11, 0, 31, 22, 9, 17, 6, 9   # arrayA has 8 values
 count:  .word 999                      # dummy value
@@ -9,6 +9,17 @@ main:
     la $t0, arrayA  # map base address of arrayA to $t0
     lw $t8, count   # map value of count to $t8
     add $t8, $zero, $zero # initialize count to 0
+    addi $t2, $t0, 32       # $t2 stores the address of last element in arrayA
+    
+    # read the array values inputted by user
+loop1: bge $t0, $t2, next # compares pointer position
+    li $v0, 5             # read user input
+    syscall
+    sw $v0, 0($t0)        # store user input to pointer address
+    addi $t0, $t0, 4      # move pointer to next element
+    j loop1               # loop back
+
+next: la $t0, arrayA  # relocate pointer to base address of arrayA
 
     # code for reading in the user value X
     li $v0, 5           # read user input
@@ -18,14 +29,13 @@ main:
     addi $t5, $t1, -1   # generate mask from user's input 
 
     # code for counting multiples of X in arrayA
-    addi $t2, $t0, 32       # $t2 stores the address of last element in arrayA
-loop: bge $t0, $t2, print   # compares pointer position
+loop2: bge $t0, $t2, print   # compares pointer position
       lw $t3 0($t0)         # load word at pointer
-      and $t4, $t3, $t5    # masks to find modulo
+      and $t4, $t3, $t5     # masks to find modulo
       bne $t4, $zero, skip  # skip if not a multiple
       addi $t8, $t8, 1      # count++ if it's a multiple
 skip: addi $t0, $t0, 4      # move pointer to next element
-      j loop                # loop back
+      j loop2                # loop back
   
     # code for printing result
 print: li $v0, 1            # system call code for print_int
