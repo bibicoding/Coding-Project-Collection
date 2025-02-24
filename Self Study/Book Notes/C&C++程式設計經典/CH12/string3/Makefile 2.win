@@ -1,0 +1,28 @@
+# Project: string3
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = string3.o
+LINKOBJ  = string3.o
+LIBS     = -L"F:/Tools/DevCppPortable/MinGW64/lib" -L"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"F:/Tools/DevCppPortable/MinGW64/include" -I"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"F:/Tools/DevCppPortable/MinGW64/include" -I"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = string3.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+string3.o: string3.c
+	$(CC) -c string3.c -o string3.o $(CFLAGS)
