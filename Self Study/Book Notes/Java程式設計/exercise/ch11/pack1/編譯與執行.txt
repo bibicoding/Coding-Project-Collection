@@ -1,0 +1,12 @@
+請在C:\myJava\exercise\ch11\pack1>下進行如下編譯
+C:\myJava\exercise\ch11\pack1>javac packb\CmyException.java
+C:\myJava\exercise\ch11\pack1>javac packa\ex11_01.java
+
+請在C:\myJava\exercise\ch11\pack1>下進行如下執行
+C:\myJava\exercise\ch11\pack1>java packa.ex11_01
+
+執行結果
+2的 5次方=32
+2的 5次方=1
+0的0次方無定義,回傳值將錯誤     0的 0次方=-1
+次方為負值,結果不為正數,回傳值將錯誤    2的 -2次方=-1
