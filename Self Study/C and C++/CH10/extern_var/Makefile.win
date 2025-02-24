@@ -1,0 +1,31 @@
+# Project: extern_var
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = extern_var.o password.o
+LINKOBJ  = extern_var.o password.o
+LIBS     = -L"F:/Tools/DevCppPortable/MinGW64/lib" -L"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"F:/Tools/DevCppPortable/MinGW64/include" -I"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"F:/Tools/DevCppPortable/MinGW64/include" -I"F:/Tools/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/Tools/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = extern_var.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+extern_var.o: extern_var.c
+	$(CC) -c extern_var.c -o extern_var.o $(CFLAGS)
+
+password.o: password.c
+	$(CC) -c password.c -o password.o $(CFLAGS)
