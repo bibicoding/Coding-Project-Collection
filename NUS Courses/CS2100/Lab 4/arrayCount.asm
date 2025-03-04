@@ -1,6 +1,6 @@
 # arrayCount.asm
   .data 
-arrayA: .word 11, 0, 31, 22, 9, 17, 6, 9   # arrayA has 8 values
+arrayA: .word 1, 2, 3, 4, 5, 6, 7, 8   # arrayA has 8 values
 count:  .word 999                      # dummy value
   .text
 
