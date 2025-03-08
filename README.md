@@ -1,16 +1,15 @@
-# Coding-Project-Collection
+# Coding Project Collection
 
-This is Chiang Peng-Yi's Coding Project Collection, which contains various projects I completed in the summer of 2024. 
-The collection features projects in different coding languages, including **Python, Java, C, JavaScript**, and more. 
+Welcome to Peter Chiang's Coding Project Collection repository! 
+This repository is a comprehensive archive of my coding projects, exercises, and coursework from academic and self-driven learning experiences.
 
-I've arranged the projects into distinct files, each representing assignments or practices from online courses I had enrolled in. 
-I will continue updating this repository throughout my coding journey, so stay tuned for more updates.
+## Overview
 
-### CS50P
-This is CS50P, an online course established by the CS50 team at Harvard that provides an introduction to Python.
-CS50P introduces **Syntaxes and Datatypes**, then moves to **Variables and Loops**.
-Then, it briefly explains **testing, I/O, Regex, and OOP**.
-The course culminates when Professor Malan (The director and lecturer of CS50) introduces further applications of Python.
+This repository is organized into two main sections:
 
-In the CS50P Project Folder are the weekly projects I've done while learning
-...
+- **NUS Courses:**  
+  Contains coding projects and exercises from my Computer Science courses during my one-year stay at NUS. This folder includes assignments, practical exercises, and projects documenting my academic journey.
+
+- **Self Study:**  
+  Houses projects and exercises from various online courses and self-study initiatives. Here, you’ll find work from courses like CS50P, CS50X, and NTU Java Training, as well as exercises and projects based on books and other learning resources from the summer of 2024.
+
